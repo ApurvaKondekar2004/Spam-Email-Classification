@@ -1,0 +1,12 @@
+prefix=d:/Spam_Email_Classification/venv/Library
+exec_prefix=d:/Spam_Email_Classification/venv/Library
+libdir=d:/Spam_Email_Classification/venv/Library/lib
+includedir=d:/Spam_Email_Classification/venv/Library/include
+
+Name: libzmq
+Description: 0MQ c++ library
+Version: 4.3.5
+Libs: -L${libdir} -lzmq
+Libs.private: 
+Requires.private: 
+Cflags: -I${includedir} 
