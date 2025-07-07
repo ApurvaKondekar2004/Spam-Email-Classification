@@ -36,7 +36,7 @@ The goal is to build a lightweight and interpretable spam classifier that:
 
 ##  Website Link
 
- **Live App**: [https://ApurvaKondekar2004-Spam-Email-Classification.streamlit.app](https://mgyr8lt4meu5qhpgntca5s.streamlit.app/)  
+ **Live App**: [https://ApurvaKondekar2004-Spam-Email-Classification.streamlit.app](https://hrtoq7soeavzuswlgcysjk.streamlit.app/)  
 
 ---
 
