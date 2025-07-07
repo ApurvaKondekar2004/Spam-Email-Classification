@@ -47,7 +47,7 @@ st.title("📩 Spam Email Classifier")
 email_text = st.text_area(" Enter email text to classify:")
 
 
-if st.button("🔍 Predict"):
+if st.button(" Predict"):
     if email_text.strip() == "":
         st.warning("Please enter some email text.")
     else:
@@ -57,13 +57,13 @@ if st.button("🔍 Predict"):
         prediction = model.predict(scaled)[0]
         proba = model.predict_proba(scaled)[0]
 
-        st.markdown(f"### 🧠 Prediction: {'🛑 **Spam**' if prediction == 1 else '✅ **Not Spam**'}")
+        st.markdown(f"### Prediction: {' **Spam**' if prediction == 1 else ' **Not Spam**'}")
         st.markdown(f"**Confidence:** {max(proba) * 100:.2f}%")
 
         # SHAP Explanation
-        st.subheader("📊 Feature Impact Explanation (SHAP)")
+        st.subheader(" Feature Impact Explanation (SHAP)")
         st.markdown("""
-            🔎 **SHAP Explanation Note**  
+             **SHAP Explanation Note**  
 
             - 🔵 Blue bars: Features that push the prediction **toward Not Spam**
             - 🔴 Red bars: Features that push it **toward Spam**
@@ -75,7 +75,7 @@ if st.button("🔍 Predict"):
         shap_values = explainer(scaled)
         shap_values.feature_names = feature_names
         
-        st.subheader("📊 Feature Impact Explanation (SHAP Bar Plot)")
+        st.subheader(" Feature Impact Explanation (SHAP Bar Plot)")
         fig, ax = plt.subplots()
         shap.plots.bar(shap_values[0], show=False)
         st.pyplot(fig)
