@@ -1,6 +1,6 @@
 # 📩 Spam Email Classification
 
-This project is a web application that classifies whether an email is **Spam** or **Not Spam** using basic NLP features and a machine learning model.
+This project is a web application that classifies whether an email is **Spam** or **Not Spam** using basic feature extraction and a machine learning model.
 
 ---
 
