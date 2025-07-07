@@ -45,7 +45,6 @@ The goal is to build a lightweight and interpretable spam classifier that:
 **Input Email:**
 Receive free internet by clicking the link!!!
 
-
 **Prediction:**
 - 🛑 Spam  
 - **Confidence:** 92.4%
